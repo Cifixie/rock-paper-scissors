@@ -21,7 +21,7 @@ export const options = {
   scissors: 2
 };
 
-type Options = $Keys<typeof countries>;
+type Options = $Keys<typeof options>;
 
 const rps = (a: Options, b: Options): Result => resultMatrix[a][b];
 
