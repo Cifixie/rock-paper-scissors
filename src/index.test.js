@@ -1,4 +1,5 @@
-import rps, { options, results } from "./index";
+// @flow
+import rps, { options } from "./index";
 
 test("equal options is always draw", () => {
   expect(rps(options.rock, options.rock)).toBe(0);

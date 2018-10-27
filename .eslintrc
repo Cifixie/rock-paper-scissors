@@ -1,5 +1,7 @@
 {
-  "plugins": ["prettier"],
+  "extends": ["plugin:flowtype/recommended"],
+  "parser": "babel-eslint",
+  "plugins": ["flowtype", "prettier"],
   "rules": {
     "prettier/prettier": "error"
   }
