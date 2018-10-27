@@ -1,5 +1,3 @@
-import { add } from "ramda";
-
 const r = {
   win: 1,
   draw: 0,
