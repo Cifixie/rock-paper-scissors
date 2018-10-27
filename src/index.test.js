@@ -1,4 +1,5 @@
 // @flow
+
 import rps, { options } from "./index";
 
 test("equal options is always draw", () => {

@@ -8,21 +8,27 @@ const r: Result = {
   loss: -1
 };
 
-type ResultMatrix = Array<Array<R>>;
-const resultMatrix = [
+type ResultMatrix = Array<Array<Result>>;
+const resultMatrix: ResultMatrix = [
   [r.draw, r.loss, r.win],
   [r.win, r.draw, r.loss],
   [r.loss, r.win, r.draw]
 ];
 
-export const options = {
+type Options = {
+  rock: number,
+  paper: number,
+  scissors: number
+};
+
+export const options: Options = {
   rock: 0,
   paper: 1,
   scissors: 2
 };
 
-type Options = $Keys<typeof options>;
+type Option = $Keys<Options>;
 
-const rps = (a: Options, b: Options): Result => resultMatrix[a][b];
+const rps = (a: Option, b: Option): Result => resultMatrix[a][b];
 
 export default rps;

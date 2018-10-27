@@ -1,8 +1,15 @@
 {
-  "extends": ["plugin:flowtype/recommended"],
+  "extends": [
+    "airbnb",
+    "plugin:prettier/recommended",
+    "plugin:flowtype/recommended"
+  ],
   "parser": "babel-eslint",
-  "plugins": ["flowtype", "prettier"],
+  "plugins": ["jest", "flowtype", "prettier"],
   "rules": {
     "prettier/prettier": "error"
+  },
+  "env": {
+    "jest/globals": true
   }
 }
