@@ -2,7 +2,7 @@
 
 type Result = 1 | 0 | -1;
 
-const r: Result = {
+const r = {
   win: 1,
   draw: 0,
   loss: -1
@@ -14,12 +14,6 @@ const resultMatrix: ResultMatrix = [
   [r.win, r.draw, r.loss],
   [r.loss, r.win, r.draw]
 ];
-
-type Options = {
-  rock: number,
-  paper: number,
-  scissors: number
-};
 
 export const options: Options = {
   rock: 0,
